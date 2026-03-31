@@ -1,0 +1,12 @@
+/work/ai/ace/client/src-tauri/target/debug/deps/writeable-7093899f7a96fc15.d: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/cmp.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/impls.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/ops.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/parts_write_adapter.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/try_writeable.rs
+
+/work/ai/ace/client/src-tauri/target/debug/deps/libwriteable-7093899f7a96fc15.rlib: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/cmp.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/impls.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/ops.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/parts_write_adapter.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/try_writeable.rs
+
+/work/ai/ace/client/src-tauri/target/debug/deps/libwriteable-7093899f7a96fc15.rmeta: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/cmp.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/impls.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/ops.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/parts_write_adapter.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/try_writeable.rs
+
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/lib.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/cmp.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/impls.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/ops.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/parts_write_adapter.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/writeable-0.6.2/src/try_writeable.rs:

@@ -1,0 +1,17 @@
+/work/ai/ace/client/src-tauri/target/debug/deps/thiserror_impl-332120affbf35e2e.d: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/ast.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/attr.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/expand.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/fallback.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/fmt.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/generics.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/prop.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/scan_expr.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/unraw.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/valid.rs
+
+/work/ai/ace/client/src-tauri/target/debug/deps/libthiserror_impl-332120affbf35e2e.so: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/ast.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/attr.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/expand.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/fallback.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/fmt.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/generics.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/prop.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/scan_expr.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/unraw.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/valid.rs
+
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/lib.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/ast.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/attr.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/expand.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/fallback.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/fmt.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/generics.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/prop.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/scan_expr.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/unraw.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/thiserror-impl-2.0.18/src/valid.rs:
+
+# env-dep:CARGO_PKG_VERSION_PATCH=18

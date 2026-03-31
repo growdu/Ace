@@ -1,0 +1,11 @@
+/work/ai/ace/client/src-tauri/target/debug/deps/futures_task-b5fb6c2c2c4cb837.d: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/spawn.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/arc_wake.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/waker.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/waker_ref.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/future_obj.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/noop_waker.rs
+
+/work/ai/ace/client/src-tauri/target/debug/deps/libfutures_task-b5fb6c2c2c4cb837.rmeta: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/spawn.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/arc_wake.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/waker.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/waker_ref.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/future_obj.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/noop_waker.rs
+
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/lib.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/spawn.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/arc_wake.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/waker.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/waker_ref.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/future_obj.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-task-0.3.32/src/noop_waker.rs:

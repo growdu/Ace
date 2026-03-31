@@ -1,0 +1,15 @@
+.hand-cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 4px;
+  padding: 20px;
+}
+
+.hand-card-wrapper {
+  transition: transform 0.2s;
+}
+
+.hand-card-wrapper:hover {
+  transform: translateY(-5px);
+}

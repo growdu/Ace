@@ -1,0 +1,11 @@
+/work/ai/ace/client/src-tauri/target/debug/deps/futures_core-1d0031611163a824.d: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/future.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/stream.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/task/mod.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/task/poll.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/task/__internal/mod.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/task/__internal/atomic_waker.rs
+
+/work/ai/ace/client/src-tauri/target/debug/deps/libfutures_core-1d0031611163a824.rmeta: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/future.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/stream.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/task/mod.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/task/poll.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/task/__internal/mod.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/task/__internal/atomic_waker.rs
+
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/lib.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/future.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/stream.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/task/mod.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/task/poll.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/task/__internal/mod.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/futures-core-0.3.32/src/task/__internal/atomic_waker.rs:

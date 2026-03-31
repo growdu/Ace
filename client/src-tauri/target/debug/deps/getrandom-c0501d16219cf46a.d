@@ -1,0 +1,12 @@
+/work/ai/ace/client/src-tauri/target/debug/deps/getrandom-c0501d16219cf46a.d: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/error.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/util.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/error_impls.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/util_libc.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/use_file.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/lazy.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/linux_android_with_fallback.rs
+
+/work/ai/ace/client/src-tauri/target/debug/deps/libgetrandom-c0501d16219cf46a.rmeta: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/error.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/util.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/error_impls.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/util_libc.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/use_file.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/lazy.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/linux_android_with_fallback.rs
+
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/lib.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/error.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/util.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/error_impls.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/util_libc.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/use_file.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/lazy.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/getrandom-0.2.17/src/linux_android_with_fallback.rs:

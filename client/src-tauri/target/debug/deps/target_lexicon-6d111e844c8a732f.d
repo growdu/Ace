@@ -1,0 +1,15 @@
+/work/ai/ace/client/src-tauri/target/debug/deps/target_lexicon-6d111e844c8a732f.d: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/data_model.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/host.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/parse_error.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/targets.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/triple.rs /work/ai/ace/client/src-tauri/target/debug/build/target-lexicon-a828874a7f817edf/out/host.rs
+
+/work/ai/ace/client/src-tauri/target/debug/deps/libtarget_lexicon-6d111e844c8a732f.rlib: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/data_model.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/host.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/parse_error.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/targets.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/triple.rs /work/ai/ace/client/src-tauri/target/debug/build/target-lexicon-a828874a7f817edf/out/host.rs
+
+/work/ai/ace/client/src-tauri/target/debug/deps/libtarget_lexicon-6d111e844c8a732f.rmeta: /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/lib.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/data_model.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/host.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/parse_error.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/targets.rs /root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/triple.rs /work/ai/ace/client/src-tauri/target/debug/build/target-lexicon-a828874a7f817edf/out/host.rs
+
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/lib.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/data_model.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/host.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/parse_error.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/targets.rs:
+/root/.cargo/registry/src/mirrors.ustc.edu.cn-38d0e5eb5da2abae/target-lexicon-0.12.16/src/triple.rs:
+/work/ai/ace/client/src-tauri/target/debug/build/target-lexicon-a828874a7f817edf/out/host.rs:
+
+# env-dep:OUT_DIR=/work/ai/ace/client/src-tauri/target/debug/build/target-lexicon-a828874a7f817edf/out
