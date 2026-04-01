@@ -6,6 +6,7 @@ use axum::{
 };
 use serde::Deserialize;
 use crate::state::{SharedState, Room, RoomPlayer, RoomStatus};
+use crate::game::{GameRoom, GamePlayer, GamePhase};
 use super::service::{CreateRoomRequest, JoinRoomRequest, RoomResponse};
 
 pub async fn create_room(
@@ -152,11 +153,19 @@ pub async fn start_match(
 ) -> Result<impl IntoResponse, (StatusCode, String)> {
     let room_id = uuid::Uuid::new_v4().to_string();
 
-    let mut players = vec![RoomPlayer {
+    let mut room_players = vec![RoomPlayer {
         user_id: payload.user_id.clone(),
         username: payload.username.clone(),
         is_ready: true,
         is_robot: false,
+    }];
+
+    let mut game_players = vec![GamePlayer {
+        user_id: payload.user_id.clone(),
+        username: payload.username.clone(),
+        cards: Vec::new(),
+        is_robot: false,
+        is_ready: false,
     }];
 
     let bot_count = match payload.mode.as_str() {
@@ -167,23 +176,36 @@ pub async fn start_match(
     };
 
     for i in 0..bot_count {
-        players.push(RoomPlayer {
-            user_id: format!("bot_{}", i),
-            username: format!("机器人{}", i + 1),
+        let bot_id = format!("bot_{}", i);
+        let bot_name = format!("机器人{}", i + 1);
+        room_players.push(RoomPlayer {
+            user_id: bot_id.clone(),
+            username: bot_name.clone(),
             is_ready: true,
             is_robot: true,
+        });
+        game_players.push(GamePlayer {
+            user_id: bot_id,
+            username: bot_name,
+            cards: Vec::new(),
+            is_robot: true,
+            is_ready: false,
         });
     }
 
     let room = Room {
         id: room_id.clone(),
         owner_id: payload.user_id.clone(),
-        players,
+        players: room_players,
         status: RoomStatus::Playing,
         created_at: chrono::Utc::now().timestamp(),
     };
 
     state.rooms.write().insert(room_id.clone(), room);
+
+    // 创建游戏房间
+    let game_room = GameRoom::new(room_id.clone(), game_players);
+    state.game_rooms.write().insert(room_id.clone(), game_room);
 
     Ok(Json(serde_json::json!({
         "room_id": room_id,

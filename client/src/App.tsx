@@ -8,7 +8,15 @@ function App() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [gameStarted, setGameStarted] = useState(false);
-  const { connected, gameState, connect, sendMessage } = useGame();
+  const {
+    connected,
+    gameState,
+    connect,
+    sendBid,
+    sendPassBid,
+    sendPlayCard,
+    sendStartGame,
+  } = useGame();
 
   const handleLogin = async () => {
     try {
@@ -21,6 +29,17 @@ function App() {
     }
   };
 
+  const handleRegister = async () => {
+    try {
+      const result = await auth.register(username, password);
+      if (result.token) {
+        setUser(result.user);
+      }
+    } catch (e) {
+      console.error('注册失败', e);
+    }
+  };
+
   const handleStartMatch = async () => {
     if (!user) return;
     try {
@@ -28,6 +47,10 @@ function App() {
       if (result.room_id) {
         connect(result.room_id);
         setGameStarted(true);
+        // 延迟发送开始游戏消息，让 WebSocket 连接稳定
+        setTimeout(() => {
+          sendStartGame();
+        }, 500);
       }
     } catch (e) {
       console.error('匹配失败', e);
@@ -49,7 +72,10 @@ function App() {
           value={password}
           onChange={e => setPassword(e.target.value)}
         />
-        <button onClick={handleLogin}>登录</button>
+        <div className="auth-buttons">
+          <button onClick={handleLogin}>登录</button>
+          <button onClick={handleRegister} className="register-btn">注册</button>
+        </div>
       </div>
     );
   }
@@ -65,7 +91,14 @@ function App() {
     );
   }
 
-  return <GameBoard gameState={gameState} onPlayCard={(i) => sendMessage({ type: 'play_card', card_index: i })} onBid={(b) => sendMessage({ type: 'bid', bid: b })} />;
+  return (
+    <GameBoard
+      gameState={gameState as any}
+      onPlayCard={sendPlayCard}
+      onBid={sendBid}
+      onPassBid={sendPassBid}
+    />
+  );
 }
 
 export default App;

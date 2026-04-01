@@ -1,11 +1,13 @@
 use std::sync::Arc;
 use parking_lot::RwLock;
 use std::collections::HashMap;
+use crate::game::GameRoom;
 
 pub struct AppState {
     pub users: RwLock<HashMap<String, User>>,
     pub rooms: RwLock<HashMap<String, Room>>,
-    pub sessions: RwLock<HashMap<String, String>>, // token -> user_id
+    pub sessions: RwLock<HashMap<String, String>>,
+    pub game_rooms: RwLock<HashMap<String, GameRoom>>,
 }
 
 impl AppState {
@@ -14,6 +16,7 @@ impl AppState {
             users: RwLock::new(HashMap::new()),
             rooms: RwLock::new(HashMap::new()),
             sessions: RwLock::new(HashMap::new()),
+            game_rooms: RwLock::new(HashMap::new()),
         }
     }
 }
