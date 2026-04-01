@@ -27,6 +27,7 @@ interface GameState {
 
 interface GameBoardProps {
   gameState: GameState | null;
+  myUserId?: string;
   onPlayCard: (cardIndex: number) => void;
   onBid?: (bid: number) => void;
   onPassBid?: () => void;
@@ -34,6 +35,7 @@ interface GameBoardProps {
 
 export const GameBoard: React.FC<GameBoardProps> = ({
   gameState,
+  myUserId,
   onPlayCard,
   onBid,
   onPassBid,
@@ -159,7 +161,8 @@ export const GameBoard: React.FC<GameBoardProps> = ({
         <BidPanel
           currentBid={gameState.current_bid}
           currentPlayer={gameState.current_player}
-          myPlayerId="player_1"
+          myPlayerId={myUserId}
+          players={gameState.players}
           onBid={onBid!}
           onPass={onPassBid!}
         />

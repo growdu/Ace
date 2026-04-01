@@ -7,6 +7,7 @@ interface BidPanelProps {
   myPlayerId?: string;
   onBid: (bid: number) => void;
   onPass: () => void;
+  players?: { user_id: string }[];
 }
 
 const BID_OPTIONS = [75, 85, 100, 120, 150];
@@ -14,10 +15,13 @@ const BID_OPTIONS = [75, 85, 100, 120, 150];
 export const BidPanel: React.FC<BidPanelProps> = ({
   currentBid,
   currentPlayer,
+  myPlayerId,
   onBid,
   onPass,
+  players = [],
 }) => {
-  const isMyTurn = currentPlayer === 0; // 简化：假设玩家是0号
+  const myIndex = players.findIndex(p => p.user_id === myPlayerId);
+  const isMyTurn = myIndex !== -1 && currentPlayer === myIndex;
 
   return (
     <div className="bid-panel">

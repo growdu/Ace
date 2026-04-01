@@ -30,8 +30,10 @@ export function useGame() {
   const [connected, setConnected] = useState(false);
   const [gameState, setGameState] = useState<GameState | null>(null);
   const wsRef = useRef<WebSocket | null>(null);
+  const userIdRef = useRef<string>('');
 
-  const connect = useCallback((roomId: string) => {
+  const connect = useCallback((roomId: string, userId: string) => {
+    userIdRef.current = userId;
     const ws = new WebSocket(`ws://localhost:8080/ws/game/${roomId}`);
 
     ws.onopen = () => {
@@ -155,15 +157,15 @@ export function useGame() {
   }, []);
 
   const sendBid = useCallback((bid: number) => {
-    sendMessage({ type: 'bid', user_id: 'player_1', bid });
+    sendMessage({ type: 'bid', user_id: userIdRef.current, bid });
   }, [sendMessage]);
 
   const sendPassBid = useCallback(() => {
-    sendMessage({ type: 'pass_bid', user_id: 'player_1' });
+    sendMessage({ type: 'pass_bid', user_id: userIdRef.current });
   }, [sendMessage]);
 
   const sendPlayCard = useCallback((cardIndex: number) => {
-    sendMessage({ type: 'play_card', user_id: 'player_1', card_index: cardIndex });
+    sendMessage({ type: 'play_card', user_id: userIdRef.current, card_index: cardIndex });
   }, [sendMessage]);
 
   const sendStartGame = useCallback(() => {

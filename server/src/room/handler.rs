@@ -94,8 +94,13 @@ pub async fn leave_room(
             room.owner_id = room.players[0].user_id.clone();
         }
 
-        if room.players.is_empty() {
+        let room_empty = room.players.is_empty();
+
+        if room_empty {
             rooms.remove(room_id);
+            // 同时清理游戏房间状态
+            drop(rooms);
+            state.game_rooms.write().remove(room_id);
         }
 
         Ok(Json(serde_json::json!({

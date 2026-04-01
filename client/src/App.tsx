@@ -3,7 +3,7 @@ import { GameBoard } from './components/GameBoard';
 import { auth, match } from './services/api';
 import { useGame } from './hooks/useGame';
 
-function App() {
+function App(_props: { user?: any }) {
   const [user, setUser] = useState<any>(null);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -45,7 +45,7 @@ function App() {
     try {
       const result = await match.start(user.id, user.username, 'bot');
       if (result.room_id) {
-        connect(result.room_id);
+        connect(result.room_id, user.id);
         setGameStarted(true);
         // 延迟发送开始游戏消息，让 WebSocket 连接稳定
         setTimeout(() => {
@@ -94,6 +94,7 @@ function App() {
   return (
     <GameBoard
       gameState={gameState as any}
+      myUserId={user?.id}
       onPlayCard={sendPlayCard}
       onBid={sendBid}
       onPassBid={sendPassBid}
