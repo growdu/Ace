@@ -1,0 +1,28 @@
+# 后端 Docker 镜像
+FROM rust:1.75-bookworm as builder
+
+WORKDIR /build
+
+# 复制 Cargo 文件和源码
+COPY server/Cargo.toml server/src ./
+COPY client/src-tauri/src/game client/src-tauri/src/ai ./game_lib/
+
+RUN cargo build --release
+
+# 运行时镜像
+FROM debian:bookworm-slim
+
+RUN apt-get update && \
+    apt-get install -y ca-certificates curl && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY --from=builder /build/target/release/ace-server /app/ace-server
+
+ENV RUST_LOG=info
+ENV PORT=8080
+
+EXPOSE 8080
+
+CMD ["/app/ace-server"]

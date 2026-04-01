@@ -1,0 +1,15 @@
+[Unit]
+Description=ACE Tengchong Baifen Game Server
+After=network.target
+
+[Service]
+Type=simple
+User=ace
+WorkingDirectory=/opt/ace/server
+Environment=RUST_LOG=info
+ExecStart=/opt/ace/server/target/release/ace-server
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
