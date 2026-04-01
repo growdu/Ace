@@ -16,3 +16,46 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 10px;
+}
+
+.login-screen input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.login-screen button {
+  padding: 10px 30px;
+  font-size: 16px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lobby {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.lobby button {
+  padding: 15px 40px;
+  font-size: 18px;
+  background: #388e3c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}

@@ -1,46 +1,71 @@
 import { useState } from 'react';
 import { GameBoard } from './components/GameBoard';
-import { GameState } from './types/game';
+import { auth, match } from './services/api';
+import { useGame } from './hooks/useGame';
 
 function App() {
-  const [gameState] = useState<GameState>({
-    players: [
-      { id: 0, name: '对手1', cards: [], isHost: false, isRobot: true, score: 0, position: 'top' },
-      { id: 1, name: '对手2', cards: [], isHost: false, isRobot: true, score: 0, position: 'right' },
-      { id: 2, name: '玩家', cards: [], isHost: false, isRobot: false, score: 0, position: 'bottom' },
-      { id: 3, name: '对手3', cards: [], isHost: false, isRobot: true, score: 0, position: 'left' },
-    ],
-    currentPlayer: 0,
-    bottomCards: [],
-    currentBid: 75,
-    bidder: null,
-    trumpSuit: null,
-    scores: [0, 0],
-    roundCards: [null, null, null, null],
-    roundWinner: null,
-    phase: 'Waiting',
-    roundNumber: 0,
-  });
+  const [user, setUser] = useState<any>(null);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [gameStarted, setGameStarted] = useState(false);
+  const { connected, gameState, connect, sendMessage } = useGame();
 
-  const handlePlayCard = (cardIndex: number) => {
-    console.log('Play card:', cardIndex);
-    // TODO: 调用 Rust 后端
+  const handleLogin = async () => {
+    try {
+      const result = await auth.login(username, password);
+      if (result.token) {
+        setUser(result.user);
+      }
+    } catch (e) {
+      console.error('登录失败', e);
+    }
   };
 
-  const handleBid = (bid: number) => {
-    console.log('Bid:', bid);
-    // TODO: 调用 Rust 后端
+  const handleStartMatch = async () => {
+    if (!user) return;
+    try {
+      const result = await match.start(user.id, user.username, 'bot');
+      if (result.room_id) {
+        connect(result.room_id);
+        setGameStarted(true);
+      }
+    } catch (e) {
+      console.error('匹配失败', e);
+    }
   };
 
-  return (
-    <div className="app">
-      <GameBoard
-        gameState={gameState}
-        onPlayCard={handlePlayCard}
-        onBid={handleBid}
-      />
-    </div>
-  );
+  if (!user) {
+    return (
+      <div className="login-screen">
+        <h1>腾冲百分</h1>
+        <input
+          placeholder="用户名"
+          value={username}
+          onChange={e => setUsername(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="密码"
+          value={password}
+          onChange={e => setPassword(e.target.value)}
+        />
+        <button onClick={handleLogin}>登录</button>
+      </div>
+    );
+  }
+
+  if (!gameStarted) {
+    return (
+      <div className="lobby">
+        <h1>欢迎, {user.username}</h1>
+        <p>积分: {user.score}</p>
+        <button onClick={handleStartMatch}>开始匹配</button>
+        <p>状态: {connected ? '已连接' : '未连接'}</p>
+      </div>
+    );
+  }
+
+  return <GameBoard gameState={gameState} onPlayCard={(i) => sendMessage({ type: 'play_card', card_index: i })} onBid={(b) => sendMessage({ type: 'bid', bid: b })} />;
 }
 
 export default App;
