@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+server/target/
+
+# Build
+dist/
+
+# Worktrees
+.worktrees/
+worktrees/
